@@ -1,13 +1,13 @@
-Summary:	FTP client for KDE
-Summary(pl):	Klient FTP dla KDE
+Summary:	A graphical FTP client for KDE
+Summary(pl):	Graficzny klient FTP dla KDE
 Name:		kftpgrabber
 Version:	0.5.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	http://kftpgrabber.sourceforge.net/releases/%{name}-%{version}.tar.bz2
+Source0:	http://kftpgrabber.sf.net/releases/%{name}-%{version}.tar.bz2
 # Source0-md5:	80d0f75a5b62ea05297bad67d859815b
-URL:		http://kftpgrabber.seul.org/
+URL:		http://kftpgrabber.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	howl-devel
@@ -19,10 +19,15 @@ BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-FTP client for KDE.
+KFTPGrabber is a graphical FTP client for KDE. It provides a nice GUI
+for all file transfer operations, it supports encrypted connections
+(both SSL and SFTP), site-to-site (FXP) transfers and complete bookmark
+system.
 
 %description -l pl
-Klient FTP dla KDE.
+KFTPGrabber jest graficznym klientem FTP dla KDE. Wyposa¿ony jest w
+mi³y dla oka GUI, wspiera szyfrowane po³±czenia (SSL i SFTP),
+site-to-site (FXP) oraz posiada zak³adki.
 
 %prep
 %setup -q
