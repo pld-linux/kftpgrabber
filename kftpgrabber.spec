@@ -33,7 +33,9 @@ przesy³anie site-to-site (FXP) oraz posiada zak³adki.
 %setup -q
 
 %build
-%configure
+%configure \
+	--with-extra-includes=%{_includedir}/qsa
+
 %{__make}
 
 %install
