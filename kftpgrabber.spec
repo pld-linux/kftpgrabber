@@ -50,7 +50,7 @@ rm -rf $RPM_BUILD_ROOT
 	Iconsdir=%{_pixmapsdir} \
 	kde_htmldir=%{_kdedocdir}
 
-%find_lang %{name} --all-name
+%find_lang %{name} --with-kde
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -66,7 +66,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/kde3/*.la
 %{_datadir}/apps/%{name}
 %{_desktopdir}/kde/*.desktop
-%{_iconsdir}/*/*/*/*.png
+%{_iconsdir}/hicolor/*/*/*.png
 %{_datadir}/services/*.desktop
 %{_datadir}/servicetypes/*.desktop
-%{_kdedocdir}/*
