@@ -26,8 +26,8 @@ system.
 
 %description -l pl
 KFTPGrabber jest graficznym klientem FTP dla KDE. Wyposa¿ony jest w
-mi³y dla oka GUI, wspiera szyfrowane po³±czenia (SSL i SFTP),
-site-to-site (FXP) oraz posiada zak³adki.
+mi³y dla oka GUI, obs³uguje szyfrowane po³±czenia (SSL i SFTP),
+przesy³anie site-to-site (FXP) oraz posiada zak³adki.
 
 %prep
 %setup -q
