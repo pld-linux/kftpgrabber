@@ -37,7 +37,7 @@ przesy³anie site-to-site (FXP) oraz posiada zak³adki.
 %build
 %configure \
 	--with-extra-includes=%{_includedir}/qsa \
-	--with-qt-libraries=%{_datadir}
+	--with-qt-libraries=%{_libdir}
 
 %{__make}
 
