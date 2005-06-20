@@ -70,3 +70,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_iconsdir}/hicolor/*/*/*.png
 %{_datadir}/services/*.desktop
 %{_datadir}/servicetypes/*.desktop
+%{_includedir}/kftpgrabber/*.h
