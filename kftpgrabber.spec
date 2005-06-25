@@ -51,6 +51,9 @@ rm -rf $RPM_BUILD_ROOT
 	Iconsdir=%{_pixmapsdir} \
 	kde_htmldir=%{_kdedocdir}
 
+# One header file, unnesesary in package.
+rm $RPM_BUILD_ROOT%{_includedir}/kftpgrabber/*.h
+
 %find_lang %{name} --with-kde
 
 %clean
@@ -70,4 +73,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_iconsdir}/hicolor/*/*/*.png
 %{_datadir}/services/*.desktop
 %{_datadir}/servicetypes/*.desktop
-%{_includedir}/kftpgrabber/*.h
