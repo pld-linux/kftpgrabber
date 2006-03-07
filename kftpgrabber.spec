@@ -9,6 +9,7 @@ Group:		X11/Applications/Networking
 #Source0:	http://kftpgrabber.sf.net/releases/%{name}-%{version}.tar.bz2
 Source0:	http://kftpgrabber.sf.net/releases/%{name}-%{version}-%{_beta}.tar.bz2
 # Source0-md5:	d1ceb486d3a93af67778e8e6e09ec947
+Patch0:		%{name}-am.patch
 URL:		http://kftpgrabber.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -35,6 +36,7 @@ przesy³anie site-to-site (FXP) oraz posiada zak³adki.
 
 %prep
 %setup -q -n %{name}-%{version}-%{_beta}
+%patch0 -p1
 
 %build
 %configure \
