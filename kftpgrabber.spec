@@ -1,16 +1,14 @@
 Summary:	A graphical FTP client for KDE
 Summary(pl):	Graficzny klient FTP dla KDE
 Name:		kftpgrabber
-Version:	0.7.0
-%define		_beta	beta1
-Release:	0.%{_beta}.1
+Version:	0.8.0
+Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
-#Source0:	http://kftpgrabber.sf.net/releases/%{name}-%{version}.tar.bz2
-Source0:	http://kftpgrabber.sf.net/releases/%{name}-%{version}-%{_beta}.tar.bz2
-# Source0-md5:	d1ceb486d3a93af67778e8e6e09ec947
-Patch0:		%{name}-am.patch
-URL:		http://kftpgrabber.sourceforge.net/
+Source0:	http://www.kftp.org/uploads/files/%{name}-%{version}.tar.bz2
+# Source0-md5:	dbbbca5cd4303db886a2d8dac39dd98c
+Patch0:         kde-ac260-lt.patch
+URL:		http://www.kftp.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	howl-devel
@@ -35,10 +33,12 @@ mi³y dla oka GUI, obs³uguje szyfrowane po³±czenia (SSL i SFTP),
 przesy³anie site-to-site (FXP) oraz posiada zak³adki.
 
 %prep
-%setup -q -n %{name}-%{version}-%{_beta}
+%setup -q 
 %patch0 -p1
 
 %build
+%{__aclocal} -I admin
+%{__autoconf}
 %configure \
 	--with-extra-includes=%{_includedir}/qsa \
 	--with-qt-libraries=%{_libdir}
@@ -71,7 +71,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %attr(755,root,root) %{_libdir}/lib*.so.*.*.*
 %attr(755,root,root) %{_libdir}/kde3/*.so
-%{_libdir}/kde3/*.la
 %{_datadir}/apps/%{name}
 %{_datadir}/config.kcfg/*.kcfg
 %{_desktopdir}/kde/*.desktop
