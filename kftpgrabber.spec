@@ -1,5 +1,5 @@
 Summary:	A graphical FTP client for KDE
-Summary(pl):	Graficzny klient FTP dla KDE
+Summary(pl.UTF-8):   Graficzny klient FTP dla KDE
 Name:		kftpgrabber
 Version:	0.8.0
 Release:	1
@@ -29,10 +29,10 @@ for all file transfer operations, it supports encrypted connections
 (both SSL and SFTP), site-to-site (FXP) transfers and complete bookmark
 system.
 
-%description -l pl
-KFTPGrabber jest graficznym klientem FTP dla KDE. Wyposaøony jest w
-mi≥y dla oka GUI, obs≥uguje szyfrowane po≥±czenia (SSL i SFTP),
-przesy≥anie site-to-site (FXP) oraz posiada zak≥adki.
+%description -l pl.UTF-8
+KFTPGrabber jest graficznym klientem FTP dla KDE. Wyposa≈ºony jest w
+mi≈Çy dla oka GUI, obs≈Çuguje szyfrowane po≈ÇƒÖczenia (SSL i SFTP),
+przesy≈Çanie site-to-site (FXP) oraz posiada zak≈Çadki.
 
 %prep
 %setup -q 
