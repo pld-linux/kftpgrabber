@@ -1,5 +1,5 @@
 Summary:	A graphical FTP client for KDE
-Summary(pl.UTF-8):   Graficzny klient FTP dla KDE
+Summary(pl.UTF-8):	Graficzny klient FTP dla KDE
 Name:		kftpgrabber
 Version:	0.8.0
 Release:	1
