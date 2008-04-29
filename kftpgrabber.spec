@@ -11,8 +11,7 @@ Patch0:         kde-ac260-lt.patch
 URL:		http://www.kftp.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	boost-filesystem-devel
-BuildRequires:	boost-regex-devel
+BuildRequires:	boost-devel >= 1.35.0
 BuildRequires:	howl-devel
 BuildRequires:	kdelibs-devel
 BuildRequires:	openssl-devel >= 0.9.7d
